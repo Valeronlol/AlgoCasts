@@ -12,6 +12,20 @@
 //   4
 //   buzz
 
-function fizzBuzz(n) {}
+function fizzBuzz(n) {
+  for (let i = 1; i <= n; i++) {
+    let isMultThree = i % 3 === 0
+    let isMultFive = i % 5 === 0
+    if (isMultThree && isMultFive) {
+      console.log('fizzbuzz')
+    } else if (isMultThree) {
+      console.log('fizz')
+    } else if (isMultFive) {
+      console.log('buzz')
+    } else {
+      console.log(i)
+    }
+  }
+}
 
 module.exports = fizzBuzz;
